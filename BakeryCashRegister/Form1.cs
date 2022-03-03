@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+using System.Media;
 
 namespace BakeryCashRegister
 {
@@ -44,7 +46,7 @@ namespace BakeryCashRegister
 
                 subTotal = numOfCupcakes * cupcakeCost + numOfCakes * cakeCost + numOfCookies * cookieCost;
                 taxAmount = subTotal * taxRate;
-                totalCost = subTotal * taxAmount;
+                totalCost = subTotal + taxAmount;
 
                 subtotalOutput.Text = $"{subTotal.ToString("C")}";
                 taxOutput.Text = $"{taxAmount.ToString("C")}";
@@ -53,8 +55,8 @@ namespace BakeryCashRegister
             catch
             {
                 subtotalOutput.Text = "Error";
-                taxOutput.Text = "Error";
-                totalOutput.Text = "Error";
+                taxOutput.Text = "";
+                totalOutput.Text = "";
             }
         }
 
@@ -69,22 +71,46 @@ namespace BakeryCashRegister
         private void reciptButton_Click(object sender, EventArgs e)
         {
             reciptDescription.Text = "Cookies n' Cakes";
+            Thread.Sleep(900);
+            Refresh();
 
             reciptDescription.Text += "\nOrder number 45";
+            Thread.Sleep(900);
+            Refresh();
             reciptDescription.Text += "\n\nMarch 1, 2022";
+            Thread.Sleep(900);
+            Refresh();
 
             reciptDescription.Text += $"\n\nCupcakes x{numOfCupcakes} @ {cupcakeCost.ToString ("C")}";
+            Thread.Sleep(900);
+            Refresh();
             reciptDescription.Text += $"\nCakes x{numOfCakes} @ {cakeCost.ToString("C")}";
+            Thread.Sleep(900);
+            Refresh();
             reciptDescription.Text += $"\nCookies x{numOfCookies} @ {cookieCost.ToString("C")}";
+            Thread.Sleep(900);
+            Refresh();
 
             reciptDescription.Text += $"\n\nSubtotal {subTotal.ToString("C")}";
+            Thread.Sleep(900);
+            Refresh();
             reciptDescription.Text += $"\nTax {taxAmount.ToString("C")}";
+            Thread.Sleep(900);
+            Refresh();
             reciptDescription.Text += $"\nTotal {totalCost.ToString("C")}";
+            Thread.Sleep(900);
+            Refresh();
 
             reciptDescription.Text += $"\n\nTendered {tendered.ToString("C")}";
+            Thread.Sleep(900);
+            Refresh();
             reciptDescription.Text += $"\nChange {change.ToString("C")}";
+            Thread.Sleep(900);
+            Refresh();
 
             reciptDescription.Text += "\n\nHave a nice day!!";
+            Thread.Sleep(1000);
+            Refresh();
         }
 
         private void newOrderButton_Click(object sender, EventArgs e)
@@ -100,7 +126,6 @@ namespace BakeryCashRegister
 
             changeOutput.Text = "";
             reciptDescription.Text = "";
-
         }
     }
 }

@@ -60,9 +60,10 @@
             // 
             this.numOfCupcakeLabel.AutoSize = true;
             this.numOfCupcakeLabel.Font = new System.Drawing.Font("Rockwell", 10F);
-            this.numOfCupcakeLabel.Location = new System.Drawing.Point(32, 58);
+            this.numOfCupcakeLabel.Location = new System.Drawing.Point(43, 71);
+            this.numOfCupcakeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.numOfCupcakeLabel.Name = "numOfCupcakeLabel";
-            this.numOfCupcakeLabel.Size = new System.Drawing.Size(141, 17);
+            this.numOfCupcakeLabel.Size = new System.Drawing.Size(171, 20);
             this.numOfCupcakeLabel.TabIndex = 0;
             this.numOfCupcakeLabel.Text = "Number of cupcakes";
             // 
@@ -70,9 +71,10 @@
             // 
             this.numOfCakeLabel.AutoSize = true;
             this.numOfCakeLabel.Font = new System.Drawing.Font("Rockwell", 10F);
-            this.numOfCakeLabel.Location = new System.Drawing.Point(32, 98);
+            this.numOfCakeLabel.Location = new System.Drawing.Point(43, 121);
+            this.numOfCakeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.numOfCakeLabel.Name = "numOfCakeLabel";
-            this.numOfCakeLabel.Size = new System.Drawing.Size(117, 17);
+            this.numOfCakeLabel.Size = new System.Drawing.Size(142, 20);
             this.numOfCakeLabel.TabIndex = 1;
             this.numOfCakeLabel.Text = "Number of cakes";
             // 
@@ -80,31 +82,35 @@
             // 
             this.numOfCookiesLabel.AutoSize = true;
             this.numOfCookiesLabel.Font = new System.Drawing.Font("Rockwell", 10F);
-            this.numOfCookiesLabel.Location = new System.Drawing.Point(32, 138);
+            this.numOfCookiesLabel.Location = new System.Drawing.Point(43, 170);
+            this.numOfCookiesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.numOfCookiesLabel.Name = "numOfCookiesLabel";
-            this.numOfCookiesLabel.Size = new System.Drawing.Size(130, 17);
+            this.numOfCookiesLabel.Size = new System.Drawing.Size(158, 20);
             this.numOfCookiesLabel.TabIndex = 2;
             this.numOfCookiesLabel.Text = "Number of cookies";
             // 
             // cupcakeInput
             // 
-            this.cupcakeInput.Location = new System.Drawing.Point(176, 57);
+            this.cupcakeInput.Location = new System.Drawing.Point(235, 70);
+            this.cupcakeInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cupcakeInput.Name = "cupcakeInput";
-            this.cupcakeInput.Size = new System.Drawing.Size(68, 20);
+            this.cupcakeInput.Size = new System.Drawing.Size(89, 22);
             this.cupcakeInput.TabIndex = 3;
             // 
             // cakeInput
             // 
-            this.cakeInput.Location = new System.Drawing.Point(176, 98);
+            this.cakeInput.Location = new System.Drawing.Point(235, 121);
+            this.cakeInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cakeInput.Name = "cakeInput";
-            this.cakeInput.Size = new System.Drawing.Size(68, 20);
+            this.cakeInput.Size = new System.Drawing.Size(89, 22);
             this.cakeInput.TabIndex = 4;
             // 
             // cookieInput
             // 
-            this.cookieInput.Location = new System.Drawing.Point(176, 138);
+            this.cookieInput.Location = new System.Drawing.Point(235, 170);
+            this.cookieInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cookieInput.Name = "cookieInput";
-            this.cookieInput.Size = new System.Drawing.Size(68, 20);
+            this.cookieInput.Size = new System.Drawing.Size(89, 22);
             this.cookieInput.TabIndex = 5;
             // 
             // calulateTotalButton
@@ -112,9 +118,10 @@
             this.calulateTotalButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.calulateTotalButton.Font = new System.Drawing.Font("Cooper Black", 13F);
             this.calulateTotalButton.ForeColor = System.Drawing.Color.White;
-            this.calulateTotalButton.Location = new System.Drawing.Point(35, 174);
+            this.calulateTotalButton.Location = new System.Drawing.Point(47, 214);
+            this.calulateTotalButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.calulateTotalButton.Name = "calulateTotalButton";
-            this.calulateTotalButton.Size = new System.Drawing.Size(209, 35);
+            this.calulateTotalButton.Size = new System.Drawing.Size(279, 43);
             this.calulateTotalButton.TabIndex = 6;
             this.calulateTotalButton.Text = "Calculate Totals";
             this.calulateTotalButton.UseVisualStyleBackColor = false;
@@ -124,9 +131,10 @@
             // 
             this.subTotalLabel.AutoSize = true;
             this.subTotalLabel.Font = new System.Drawing.Font("Rockwell", 10F);
-            this.subTotalLabel.Location = new System.Drawing.Point(32, 230);
+            this.subTotalLabel.Location = new System.Drawing.Point(43, 283);
+            this.subTotalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.subTotalLabel.Name = "subTotalLabel";
-            this.subTotalLabel.Size = new System.Drawing.Size(67, 17);
+            this.subTotalLabel.Size = new System.Drawing.Size(81, 20);
             this.subTotalLabel.TabIndex = 7;
             this.subTotalLabel.Text = "Sub Total";
             // 
@@ -134,9 +142,10 @@
             // 
             this.taxLabel.AutoSize = true;
             this.taxLabel.Font = new System.Drawing.Font("Rockwell", 10F);
-            this.taxLabel.Location = new System.Drawing.Point(32, 262);
+            this.taxLabel.Location = new System.Drawing.Point(43, 322);
+            this.taxLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.taxLabel.Name = "taxLabel";
-            this.taxLabel.Size = new System.Drawing.Size(31, 17);
+            this.taxLabel.Size = new System.Drawing.Size(37, 20);
             this.taxLabel.TabIndex = 8;
             this.taxLabel.Text = "Tax";
             // 
@@ -144,9 +153,10 @@
             // 
             this.totalLabel.AutoSize = true;
             this.totalLabel.Font = new System.Drawing.Font("Rockwell", 10F);
-            this.totalLabel.Location = new System.Drawing.Point(32, 296);
+            this.totalLabel.Location = new System.Drawing.Point(43, 364);
+            this.totalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.totalLabel.Name = "totalLabel";
-            this.totalLabel.Size = new System.Drawing.Size(39, 17);
+            this.totalLabel.Size = new System.Drawing.Size(48, 20);
             this.totalLabel.TabIndex = 9;
             this.totalLabel.Text = "Total";
             // 
@@ -154,17 +164,19 @@
             // 
             this.tenderedLabel.AutoSize = true;
             this.tenderedLabel.Font = new System.Drawing.Font("Rockwell", 10F);
-            this.tenderedLabel.Location = new System.Drawing.Point(32, 327);
+            this.tenderedLabel.Location = new System.Drawing.Point(43, 402);
+            this.tenderedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tenderedLabel.Name = "tenderedLabel";
-            this.tenderedLabel.Size = new System.Drawing.Size(72, 17);
+            this.tenderedLabel.Size = new System.Drawing.Size(86, 20);
             this.tenderedLabel.TabIndex = 10;
             this.tenderedLabel.Text = "Tendered";
             // 
             // tenderedInput
             // 
-            this.tenderedInput.Location = new System.Drawing.Point(176, 327);
+            this.tenderedInput.Location = new System.Drawing.Point(235, 402);
+            this.tenderedInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tenderedInput.Name = "tenderedInput";
-            this.tenderedInput.Size = new System.Drawing.Size(68, 20);
+            this.tenderedInput.Size = new System.Drawing.Size(89, 22);
             this.tenderedInput.TabIndex = 11;
             // 
             // changeButton
@@ -172,9 +184,10 @@
             this.changeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.changeButton.Font = new System.Drawing.Font("Cooper Black", 13F);
             this.changeButton.ForeColor = System.Drawing.Color.White;
-            this.changeButton.Location = new System.Drawing.Point(35, 365);
+            this.changeButton.Location = new System.Drawing.Point(47, 449);
+            this.changeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.changeButton.Name = "changeButton";
-            this.changeButton.Size = new System.Drawing.Size(218, 39);
+            this.changeButton.Size = new System.Drawing.Size(291, 48);
             this.changeButton.TabIndex = 12;
             this.changeButton.Text = "Calculate Change";
             this.changeButton.UseVisualStyleBackColor = false;
@@ -184,9 +197,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 10F);
-            this.label1.Location = new System.Drawing.Point(32, 416);
+            this.label1.Location = new System.Drawing.Point(43, 512);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
+            this.label1.Size = new System.Drawing.Size(71, 20);
             this.label1.TabIndex = 13;
             this.label1.Text = "Change";
             // 
@@ -195,9 +209,10 @@
             this.reciptButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.reciptButton.Font = new System.Drawing.Font("Cooper Black", 13F);
             this.reciptButton.ForeColor = System.Drawing.Color.White;
-            this.reciptButton.Location = new System.Drawing.Point(35, 446);
+            this.reciptButton.Location = new System.Drawing.Point(47, 549);
+            this.reciptButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.reciptButton.Name = "reciptButton";
-            this.reciptButton.Size = new System.Drawing.Size(218, 38);
+            this.reciptButton.Size = new System.Drawing.Size(291, 47);
             this.reciptButton.TabIndex = 14;
             this.reciptButton.Text = "Print Recipt";
             this.reciptButton.UseVisualStyleBackColor = false;
@@ -208,9 +223,10 @@
             this.newOrderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.newOrderButton.Font = new System.Drawing.Font("Cooper Black", 14F);
             this.newOrderButton.ForeColor = System.Drawing.Color.White;
-            this.newOrderButton.Location = new System.Drawing.Point(402, 432);
+            this.newOrderButton.Location = new System.Drawing.Point(536, 532);
+            this.newOrderButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.newOrderButton.Name = "newOrderButton";
-            this.newOrderButton.Size = new System.Drawing.Size(334, 43);
+            this.newOrderButton.Size = new System.Drawing.Size(445, 53);
             this.newOrderButton.TabIndex = 15;
             this.newOrderButton.Text = "New Order";
             this.newOrderButton.UseVisualStyleBackColor = false;
@@ -219,87 +235,96 @@
             // reciptBaseLabel
             // 
             this.reciptBaseLabel.BackColor = System.Drawing.Color.White;
-            this.reciptBaseLabel.Location = new System.Drawing.Point(406, 58);
+            this.reciptBaseLabel.Location = new System.Drawing.Point(541, 71);
+            this.reciptBaseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.reciptBaseLabel.Name = "reciptBaseLabel";
-            this.reciptBaseLabel.Size = new System.Drawing.Size(330, 357);
+            this.reciptBaseLabel.Size = new System.Drawing.Size(440, 439);
             this.reciptBaseLabel.TabIndex = 16;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(173, 230);
+            this.label2.Location = new System.Drawing.Point(231, 283);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 17);
+            this.label2.Size = new System.Drawing.Size(0, 20);
             this.label2.TabIndex = 17;
             // 
             // subtotalOutput
             // 
             this.subtotalOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.subtotalOutput.Location = new System.Drawing.Point(184, 230);
+            this.subtotalOutput.Location = new System.Drawing.Point(245, 283);
+            this.subtotalOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.subtotalOutput.Name = "subtotalOutput";
-            this.subtotalOutput.Size = new System.Drawing.Size(69, 17);
+            this.subtotalOutput.Size = new System.Drawing.Size(92, 21);
             this.subtotalOutput.TabIndex = 20;
             // 
             // taxOutput
             // 
             this.taxOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.taxOutput.Location = new System.Drawing.Point(184, 262);
+            this.taxOutput.Location = new System.Drawing.Point(245, 322);
+            this.taxOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.taxOutput.Name = "taxOutput";
-            this.taxOutput.Size = new System.Drawing.Size(69, 17);
+            this.taxOutput.Size = new System.Drawing.Size(92, 21);
             this.taxOutput.TabIndex = 21;
             // 
             // totalOutput
             // 
             this.totalOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.totalOutput.Location = new System.Drawing.Point(184, 296);
+            this.totalOutput.Location = new System.Drawing.Point(245, 364);
+            this.totalOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.totalOutput.Name = "totalOutput";
-            this.totalOutput.Size = new System.Drawing.Size(69, 17);
+            this.totalOutput.Size = new System.Drawing.Size(92, 21);
             this.totalOutput.TabIndex = 22;
             // 
             // changeOutput
             // 
             this.changeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.changeOutput.Location = new System.Drawing.Point(175, 416);
+            this.changeOutput.Location = new System.Drawing.Point(233, 512);
+            this.changeOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.changeOutput.Name = "changeOutput";
-            this.changeOutput.Size = new System.Drawing.Size(69, 17);
+            this.changeOutput.Size = new System.Drawing.Size(92, 21);
             this.changeOutput.TabIndex = 23;
             // 
             // reciptDescription
             // 
             this.reciptDescription.BackColor = System.Drawing.Color.White;
             this.reciptDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.reciptDescription.Location = new System.Drawing.Point(422, 75);
+            this.reciptDescription.Location = new System.Drawing.Point(563, 92);
+            this.reciptDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.reciptDescription.Name = "reciptDescription";
-            this.reciptDescription.Size = new System.Drawing.Size(300, 317);
+            this.reciptDescription.Size = new System.Drawing.Size(400, 390);
             this.reciptDescription.TabIndex = 24;
             // 
             // bannerLabel
             // 
             this.bannerLabel.BackColor = System.Drawing.Color.Crimson;
             this.bannerLabel.Location = new System.Drawing.Point(0, 0);
+            this.bannerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bannerLabel.Name = "bannerLabel";
-            this.bannerLabel.Size = new System.Drawing.Size(779, 43);
+            this.bannerLabel.Size = new System.Drawing.Size(1039, 53);
             this.bannerLabel.TabIndex = 25;
             // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.BackColor = System.Drawing.Color.Crimson;
-            this.titleLabel.Font = new System.Drawing.Font("Cooper Black", 20.5F);
+            this.titleLabel.Font = new System.Drawing.Font("Cooper Black", 25F);
             this.titleLabel.ForeColor = System.Drawing.Color.White;
-            this.titleLabel.Location = new System.Drawing.Point(265, 9);
+            this.titleLabel.Location = new System.Drawing.Point(349, 0);
+            this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(251, 32);
+            this.titleLabel.Size = new System.Drawing.Size(377, 49);
             this.titleLabel.TabIndex = 26;
             this.titleLabel.Text = "Cookies n\' Cakes";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(777, 487);
+            this.ClientSize = new System.Drawing.Size(1036, 599);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.bannerLabel);
             this.Controls.Add(this.reciptDescription);
@@ -326,6 +351,7 @@
             this.Controls.Add(this.numOfCakeLabel);
             this.Controls.Add(this.numOfCupcakeLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

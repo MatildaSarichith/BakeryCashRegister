@@ -312,7 +312,7 @@
             this.titleLabel.BackColor = System.Drawing.Color.Crimson;
             this.titleLabel.Font = new System.Drawing.Font("Cooper Black", 25F);
             this.titleLabel.ForeColor = System.Drawing.Color.White;
-            this.titleLabel.Location = new System.Drawing.Point(349, 0);
+            this.titleLabel.Location = new System.Drawing.Point(343, 4);
             this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(377, 49);

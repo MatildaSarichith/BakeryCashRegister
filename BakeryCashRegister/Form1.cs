@@ -34,26 +34,40 @@ namespace BakeryCashRegister
         public Form1()
         {
             InitializeComponent();
+
+            calulateTotalButton.Enabled = true;
+            changeButton.Enabled = false;
+            reciptButton.Enabled = false;
+            newOrderButton.Enabled = false;
         }
 
         private void calulateTotalButton_Click(object sender, EventArgs e)
         {
             try
             {
+                //number of items
                 numOfCupcakes = Convert.ToInt16(cupcakeInput.Text);
                 numOfCakes = Convert.ToInt16(cakeInput.Text);
                 numOfCookies = Convert.ToInt16(cookieInput.Text);
 
+                //subtotal, tax amount, total cost
                 subTotal = numOfCupcakes * cupcakeCost + numOfCakes * cakeCost + numOfCookies * cookieCost;
                 taxAmount = subTotal * taxRate;
                 totalCost = subTotal + taxAmount;
 
+                //outputs
                 subtotalOutput.Text = $"{subTotal.ToString("C")}";
                 taxOutput.Text = $"{taxAmount.ToString("C")}";
                 totalOutput.Text = $"{totalCost.ToString("C")}";
+
+                calulateTotalButton.Enabled = false;
+                changeButton.Enabled = true;
+                reciptButton.Enabled = false;
+                newOrderButton.Enabled = false;
             }
             catch
             {
+                //if letter as input
                 subtotalOutput.Text = "Error";
                 taxOutput.Text = "";
                 totalOutput.Text = "";
@@ -62,14 +76,21 @@ namespace BakeryCashRegister
 
         private void changeButton_Click(object sender, EventArgs e)
         {
+           //tendered and change
             tendered = Convert.ToInt16(tenderedInput.Text);
             
             change = tendered - totalCost;
             changeOutput.Text = $"{change.ToString("C")}";
+
+            calulateTotalButton.Enabled = false;
+            changeButton.Enabled = false;
+            reciptButton.Enabled = true;
+            newOrderButton.Enabled = false;
         }
 
         private void reciptButton_Click(object sender, EventArgs e)
         {
+            //recipt printing
             reciptDescription.Text = "Cookies n' Cakes";
             Thread.Sleep(900);
             Refresh();
@@ -109,12 +130,29 @@ namespace BakeryCashRegister
             Refresh();
 
             reciptDescription.Text += "\n\nHave a nice day!!";
-            Thread.Sleep(1000);
+            Thread.Sleep(900);
             Refresh();
+
+            calulateTotalButton.Enabled = false;
+            changeButton.Enabled = false;
+            reciptButton.Enabled = false;
+            newOrderButton.Enabled = true;
         }
 
         private void newOrderButton_Click(object sender, EventArgs e)
         {
+            //creating new order
+            numOfCupcakes = 0;
+            numOfCakes = 0;
+            numOfCookies = 0;
+
+            taxRate = 0.13;
+            subTotal = 0;
+            taxAmount = 0;
+            totalCost = 0;
+            tendered = 0;
+            change = 0;
+
             cupcakeInput.Text = "";
             cakeInput.Text = "";
             cookieInput.Text = "";
@@ -126,6 +164,16 @@ namespace BakeryCashRegister
 
             changeOutput.Text = "";
             reciptDescription.Text = "";
+
+            calulateTotalButton.Enabled = false;
+            changeButton.Enabled = false;
+            reciptButton.Enabled = false;
+            newOrderButton.Enabled = true;
+
+            calulateTotalButton.Enabled = true;
+            changeButton.Enabled = false;
+            reciptButton.Enabled = false;
+            newOrderButton.Enabled = false;
         }
     }
 }
